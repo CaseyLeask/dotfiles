@@ -1,0 +1,8 @@
+alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -nr | head -n 20"
+alias vm="ssh cleask@vm"
+alias xpvm="ssh cleask@xpvm"
+alias shinobi="ssh casey_shell@shinobi"
+alias ninja="ssh casey_shell@ninja"
+alias kaino="ssh kaino"
+alias cheat="rbenv exec cheat"
+alias omglog="rbenv exec omglog"
