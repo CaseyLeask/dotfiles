@@ -3,7 +3,6 @@ syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
-set ruler                       " Enabled display of line/col at the bottom
 
 "" Whitespace
 set nowrap                      " don't wrap lines
@@ -16,3 +15,7 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+if !exists("autocommandsLoaded")
+  let autocommandsLoaded = 1
+  autocmd BufNewFile,BufRead Gemfile setlocal filetype=ruby
+endif
