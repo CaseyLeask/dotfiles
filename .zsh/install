@@ -1,0 +1,22 @@
+#!/bin/zsh
+
+LN_SOURCE="$HOME/.zsh/rc.zsh"
+LN_TARGET="$HOME/.zshrc"
+LN_BACKUP="$LN_TARGET-backup"
+
+if [ -L $LN_TARGET -a `readlink $LN_TARGET` = $LN_SOURCE ]; then
+  echo "Symbolic link to $LN_SOURCE already exists at $LN_TARGET"
+  exit 0
+fi
+
+if [ -e $LN_TARGET ]; then
+  echo "Backing up existing $LN_TARGET to $LN_BACKUP"
+  if [ -e $LN_BACKUP ]; then
+    echo "Backup already exists, will not overwrite."
+    exit 1
+  fi
+  mv $LN_TARGET $LN_BACKUP
+fi
+
+echo "Creating symbolic link to $LN_SOURCE at $LN_TARGET"
+ln -s $LN_SOURCE $LN_TARGET
