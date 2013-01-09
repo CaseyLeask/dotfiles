@@ -20,3 +20,5 @@ if !exists("autocommandsLoaded")
   let autocommandsLoaded = 1
   autocmd BufNewFile,BufRead Gemfile setlocal filetype=ruby
 endif
+call pathogen#infect() 
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
