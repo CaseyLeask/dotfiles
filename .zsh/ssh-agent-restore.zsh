@@ -23,4 +23,5 @@
 # newly forked shell that dies on script exit and will not export the variable 
 # in the current shell.
 
-export SSH_AUTH_SOCK=$(find /tmp/ssh-* -name `ls -alth /tmp/ssh-* | grep \`whoami\` | grep agent | head -n 1 | awk '{print $8}'`)
+# export SSH_AUTH_SOCK=$(find /tmp/ssh-* -name `ls -alth /tmp/ssh-* | grep \`whoami\` | grep agent | head -n 1 | awk '{print $8}'`)
+eval $(ssh-agent)

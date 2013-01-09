@@ -1,8 +1,7 @@
 alias pstree="pstree -g 2"
 alias hd="hexdump -C"
 
-alias ls='ls --color=auto'
-alias du='du -k --max-depth=1 $argv'
+alias ls='ls -G'
 alias l='ls'
 alias ll='ls -lh'
 alias la='ls -a'

@@ -30,7 +30,7 @@ git-new() {
   git add .gitignore &&
   git commit -m "Added .gitignore."
 }
-alias glog='git log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
+alias glog='git log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" --date-order'
 alias gl='glog --graph'
 alias gla='gl --all'
 gls() {
@@ -38,7 +38,7 @@ gls() {
   shift
   glog --pickaxe-regex "-S$query" "$@"
 }
-alias gm='git merge --no-ff'
+alias gm='git merge --no-ff --no-edit'
 alias gmf='git merge --ff-only'
 alias gp='git push'
 alias gpt='gp --tags'
