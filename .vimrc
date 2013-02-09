@@ -23,3 +23,8 @@ if !exists("autocommandsLoaded")
 endif
 call pathogen#infect() 
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
