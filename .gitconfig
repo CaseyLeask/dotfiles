@@ -1,5 +1,15 @@
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[core]
+excludesfile = /opt/boxen/config/git/gitignore
+
 [user]
-	name = Casey Leask
-	email = caseyleask@gmail.com
+        name = Casey Leask
+        email = caseyleask@gmail.com
+
 [push]
-	default = matching
+        default = matching
