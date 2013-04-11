@@ -20,6 +20,7 @@ if !exists("autocommandsLoaded")
   let autocommandsLoaded = 1
   autocmd BufNewFile,BufRead Gemfile setlocal filetype=ruby
   autocmd BufNewFile,BufRead *.json setlocal filetype=javascript
+  autocmd BufNewFile,BufRead *.less setlocal filetype=scss
 endif
 call pathogen#infect() 
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
