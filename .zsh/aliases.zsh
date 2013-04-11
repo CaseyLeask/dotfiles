@@ -7,6 +7,8 @@ alias ll='ls -lh'
 alias la='ls -a'
 alias lal='ls -lah'
 
+alias notes='(cd ~/Documents/logs && vim `date "+%Y%m%d"`.txt)'
+
 alias sshagent='source ~/.zsh/ssh-agent-restore.zsh'
 
 # See: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
