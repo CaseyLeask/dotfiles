@@ -16,3 +16,4 @@ for source in $pre_sources $auto_sources $post_sources; do
 done
 
 source /opt/boxen/env.sh
+[ -f /opt/boxen/nvm/nvm.sh ] && source /opt/boxen/nvm/nvm.sh && nvm use 0.8.8
