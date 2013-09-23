@@ -21,9 +21,12 @@ if !exists("autocommandsLoaded")
   autocmd BufNewFile,BufRead Gemfile setlocal filetype=ruby
   autocmd BufNewFile,BufRead *.json setlocal filetype=javascript
   autocmd BufNewFile,BufRead *.less setlocal filetype=scss
+  autocmd BufNewFile,BufRead *.coffee setlocal filetype=coffee
+  au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 endif
-call pathogen#infect() 
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+execute pathogen#infect() 
+syntax on
+filetype plugin indent on
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
