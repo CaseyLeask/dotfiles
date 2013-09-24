@@ -1,6 +1,7 @@
 [user]
-    name = Gary Bernhardt
-    email = gary.bernhardt@gmail.com
+    name = Casey Leask
+    email = caseyleask@gmail.com
+
 [diff]
 [color]
     ui = auto
@@ -48,3 +49,12 @@
 
 [merge]
     tool = vimdiff
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[core]
+excludesfile = /opt/boxen/config/git/gitignore
+
+[hub]
+protocol = https
