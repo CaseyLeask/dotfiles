@@ -7,7 +7,8 @@
     ui = auto
 [alias]
     st = status
-    ci = commit --verbose
+    ci = commit
+    cv = commit --verbose
     co = checkout
     di = diff
     dc = diff --cached
@@ -58,5 +59,6 @@ excludesfile = /opt/boxen/config/git/gitignore
 
 [hub]
 protocol = https
+
 [push]
 	default = upstream
