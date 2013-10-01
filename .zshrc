@@ -51,14 +51,7 @@ function mkcd() { mkdir -p $1 && cd $1 }
 function cdf() { cd *$1*/ } # stolen from @topfunky
 
 alias v="view -"
-function m() {
-    if [[ "$1" == "das" ]]; then
-        mutt -F ~/.mutt/das.muttrc
-    else
-        ~/proj/thelongpoll/thelongpoll/thelongpoll client -F ~/.mutt/$1.muttrc
-    fi
-}
-alias c="cd"
+alias notes='(cd ~/Documents/logs && vim `date "+%Y%m%d"`.txt)'
 
 # Activate the closest virtualenv by looking in parent directories.
 activate_virtualenv() {
