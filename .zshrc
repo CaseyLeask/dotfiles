@@ -50,6 +50,10 @@ export ACK_COLOR_MATCH='red'
 function mkcd() { mkdir -p $1 && cd $1 }
 function cdf() { cd *$1*/ } # stolen from @topfunky
 
+function ip() {
+    echo "`ifconfig | grep 'inet 192' | cut -d ' ' -f 2`:4567" | pbcopy
+}
+
 alias v="view -"
 alias notes='(cd ~/Documents/logs && vim `date "+%Y%m%d"`.txt)'
 
