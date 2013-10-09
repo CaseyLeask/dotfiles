@@ -2,7 +2,7 @@
 setopt PROMPT_SUBST
 autoload -U promptinit
 promptinit
-prompt grb
+prompt cl
 
 # Initialize completion
 autoload -U compinit
