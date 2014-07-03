@@ -5,7 +5,7 @@
 autocmd!
 
 " initialize @tpope, whence all vim plugins come
-call pathogen#incubate()
+call pathogen#infect('bundle/{}')
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION
