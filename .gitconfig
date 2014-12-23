@@ -51,14 +51,13 @@
 [merge]
     tool = vimdiff
 
+[hub]
+protocol = https
+
 [credential]
 helper = /opt/boxen/bin/boxen-git-credential
 
 [core]
 excludesfile = /opt/boxen/config/git/gitignore
-
-[hub]
-protocol = https
-
 [push]
-	default = upstream
+	default = simple
