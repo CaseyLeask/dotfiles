@@ -54,10 +54,8 @@
 [hub]
 protocol = https
 
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
-
-[core]
-excludesfile = /opt/boxen/config/git/gitignore
 [push]
 	default = simple
+
+[credential]
+	helper = osxkeychain

@@ -9,9 +9,11 @@ autoload -U compinit
 compinit -D
 
 # Add paths
+export GOPATH=$HOME/
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH="$HOME/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
+export PATH=$PATH:$GOPATH/bin
 
 # Colorize terminal
 alias ls='ls -G'
