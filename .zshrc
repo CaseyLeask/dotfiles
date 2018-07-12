@@ -153,4 +153,4 @@ bindkey "^S" "insert-selecta-path-in-command-line"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/gem_home/gem_home.sh
+# source /usr/local/share/gem_home/gem_home.sh
