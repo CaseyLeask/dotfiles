@@ -26,6 +26,11 @@ export HISTSIZE=100000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 
+# Git Aliases
+alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
+alias gl='glog --graph'
+alias gla='gl --all'
+
 # Use vim as the editor
 export EDITOR=vi
 # GNU Screen sets -o vi if EDITOR=vi, so we have to force it back.
@@ -49,5 +54,3 @@ alias notes='(cd ~/Documents/logs && vim `date "+%Y%m%d"`.txt)'
 # that those keys can be used for other things.
 unsetopt flowcontrol
 
-source /usr/local/share/chruby/chruby.sh
-# source /usr/local/share/gem_home/gem_home.sh
